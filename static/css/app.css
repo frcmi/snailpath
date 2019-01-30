@@ -1,0 +1,35 @@
+body {
+	font-family: "Comic Sans MS", cursive;
+	background: url("/img/epicherbert.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+button, select {
+	background: white;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 4px;
+	font-size: 1em;
+}
+
+#actionsButtons {
+	float: left;
+}
+
+#actionsInputs {
+	float: right;
+}
+
+#canvases {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+#canvases canvas {
+    position: absolute;
+    top: 0;
+	left: 0;
+	z-index: -9999;
+}

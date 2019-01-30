@@ -1,0 +1,36 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>SnailPath</title>
+		<link rel="shortcut icon" href="/img/favicon.png">
+		<link rel="stylesheet" href="/css/app.css">
+	</head>
+	<body>
+		<main>
+			<div id="canvases" data-bind="storeElement: canvases">
+				<canvas id="backgroundCanvas" data-bind="storeElement: backgroundCanvas"></canvas>
+				<canvas id="fieldCanvas" data-bind="storeElement: fieldCanvas"></canvas>
+			</div>
+
+			<div id="uiWrapper">
+				<div id="actionsToolbar">
+					<div id="actionsButtons">
+						<button data-bind="click: createPoint">Create</button>
+						<button data-bind="click: update">Update</button>
+						<button data-bind="click: animate">Animate</button>
+						<button data-bind="click: flipField">Flip Field</button>
+					</div>
+					<div id="actionsInputs">
+						<select data-bind="options: pathFiles, optionsCaption: 'Path File', value: pathFile"></select>
+						<button data-bind="click: newPathFile">New</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="/js/knockout.js"></script>
+		<script src="/js/jquery.js"></script>
+		<script src="/js/app.js"></script>
+	</body>
+</html>
